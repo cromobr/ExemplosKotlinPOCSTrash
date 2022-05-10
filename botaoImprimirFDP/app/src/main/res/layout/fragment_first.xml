@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <TextView
+        android:id="@+id/textview_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_first_fragment"
+        app:layout_constraintBottom_toTopOf="@id/button_first"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_first" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/botaoAnimado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="teste
+"
+        app:icon="@drawable/carregandorregando"
+        tools:ignore="MissingClass,MissingConstraints"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="145dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/MenuHamburguer"
+        android:layout_width="63.07dp"
+        android:layout_height="63.07dp"
+        android:background="@null"
+        android:orientation="horizontal"
+        android:rotation="180"
+        android:scaleType="center"
+        android:scaleX=".85"
+        android:scaleY=".85"
+        app:cornerRadius="0dp"
+       app:icon="@drawable/carregando"
+        app:iconTint="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#4D000000" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>3

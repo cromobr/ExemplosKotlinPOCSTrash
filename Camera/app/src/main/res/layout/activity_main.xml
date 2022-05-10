@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cameraLayout"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="match_parent">
+
+        <com.budiyev.android.codescanner.CodeScannerView
+            android:id="@+id/scanner_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:autoFocusButtonColor="@android:color/white"
+            app:autoFocusButtonVisible="false"
+            app:flashButtonColor="@android:color/white"
+            app:flashButtonVisible="false"
+            app:frameAspectRatioHeight="1"
+            app:frameAspectRatioWidth="2"
+            app:frameColor="@android:color/white"
+            app:frameCornersRadius="20dp"
+            app:frameCornersSize="50dp"
+            app:frameSize="0.45"
+            app:frameThickness="1dp"
+            app:maskColor="#77000000"
+            tools:ignore="MissingClass,MissingConstraints"
+            android:visibility="visible"/>
+
+        <ImageButton
+            android:id="@+id/fechar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:src="@drawable/fechar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            tools:layout_editor_absoluteX="86dp"
+            tools:layout_editor_absoluteY="78dp"
+            tools:ignore="MissingConstraints" />
+
+
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/troca"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@null"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="false"
+            app:lottie_colorFilter="@color/white"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/lf20_igovcl5u"
+            tools:ignore="MissingConstraints" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+    </View>
+    <Button
+        android:id="@+id/btnScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtResultado"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.825"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="testeeeee"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cameraLayout"
+        app:layout_constraintVertical_bias="0.897"
+        tools:ignore="MissingConstraints" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/leituraAnimacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:longClickable="false"
+        android:scaleType="fitXY"
+        app:lottie_autoPlay="false"
+        app:lottie_colorFilter="@color/white"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/adicionar_item"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/carrinhoLayout"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:background="@null"
+        android:visibility="gone"
+        android:clipChildren="true"
+        android:clipToPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/CarrinhoCompras"
+            style="@style/BotoesUnelevated"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:background="@null"
+            android:scaleType="center"
+            app:backgroundTint="@null"
+            app:cornerRadius="100dp"
+            app:elevation="0dp"
+            app:icon="@drawable/sacola"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rippleColor="#4DFFFFFF" />
+
+        <TextView
+            android:id="@+id/QuantidadeItens"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:elevation="20dp"
+            android:fontFamily="@font/hind_semibold"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/CarrinhoCompras" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

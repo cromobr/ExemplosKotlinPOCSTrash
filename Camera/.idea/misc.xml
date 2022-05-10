@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/BrunoCromo/Camera/app/src/main/res/drawable/carrinho_com_item.xml" value="0.368" />
+        <entry key="..\:/Users/BrunoCromo/Camera/app/src/main/res/drawable/fechar.xml" value="0.1" />
+        <entry key="..\:/Users/BrunoCromo/Camera/app/src/main/res/drawable/ic_launcher_background.xml" value="0.273" />
+        <entry key="..\:/Users/BrunoCromo/Camera/app/src/main/res/drawable/icon_erro.xml" value="0.2745" />
+        <entry key="..\:/Users/BrunoCromo/Camera/app/src/main/res/drawable/sacola.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/BrunoCromo/Camera/app/src/main/res/drawable/splash_screen.xml" value="0.368" />
+        <entry key="..\:/Users/BrunoCromo/Camera/app/src/main/res/font/hind.xml" value="0.3" />
+        <entry key="..\:/Users/BrunoCromo/Camera/app/src/main/res/font/hind_bold.xml" value="0.3" />
+        <entry key="..\:/Users/BrunoCromo/Camera/app/src/main/res/font/hind_semibold.xml" value="0.3" />
+        <entry key="..\:/Users/BrunoCromo/Camera/app/src/main/res/layout/activity_codigo_barras.xml" value="0.18854166666666666" />
+        <entry key="..\:/Users/BrunoCromo/Camera/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/BrunoCromo/Camera/app/src/main/res/layout/fragment_camera.xml" value="0.18854166666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
